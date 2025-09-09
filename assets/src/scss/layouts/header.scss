@@ -1,0 +1,332 @@
+/*$header-transition: all 0.3s ease;
+$header-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$header-bg-scrolled: #fff;
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+    transition: $header-transition;
+    top: 0;
+    left: 0;
+
+    &.scrolled {
+        background: $header-bg-scrolled;
+        box-shadow: $header-shadow;
+    }
+
+
+    .container {
+        padding: 0 15px;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__col {
+        flex: 0 0 auto;
+
+        &--menu {
+            order: 4;
+            width: 100%;
+            flex: 0 0 100%;
+        }
+
+        &--logo {
+            order: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        &--button {
+            order: 3;
+            flex-grow: 1;
+            text-align: right;
+        }
+
+        &--toggler {
+            order: 2;
+        }
+    }
+
+    &__logo {
+        color: #37447E;
+        font-size: 26px;
+        font-weight: 700;
+        text-decoration: none;
+        white-space: nowrap;
+        display: block;
+        padding: 15px 0;
+    }
+
+    &__request {
+        background-color: #111B47;
+        border: 2px solid #111B47;
+        color: #fff;
+        border-radius: 2px;
+        padding: 3px 16px;
+        min-width: 175px;
+        white-space: nowrap;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #0a112f;
+            border: 2px solid #111B47;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .navbar-collapse {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+        padding: 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        padding: 10px;
+        margin: 0;
+
+        .navbar-toggler-icon {
+            width: 24px;
+            height: 2px;
+            background: #37447E;
+            position: relative;
+            display: block;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                background: #37447E;
+                left: 0;
+            }
+
+            &::before {
+                top: -8px;
+            }
+
+            &::after {
+                top: 8px;
+            }
+        }
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .nav-link {
+        padding: 12px 20px !important;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        color: #6F7CB2;
+
+        &:hover {
+            background: #f8f9fa;
+            transform: translateX(5px);
+            color: #091133;
+        }
+    }
+
+    // Samsung Galaxy S8+ (360px)
+    @media (min-width: 360px) and (max-width: 767px) {
+        &__grid {
+            gap: 15px;
+        }
+
+        &__logo {
+            font-size: 22px;
+            padding: 12px 0;
+        }
+
+        &__request {
+            font-size: 12px;
+            padding: 3px 12px;
+            min-width: 170px;
+        }
+
+        .navbar-toggler {
+            padding: 8px;
+
+            .navbar-toggler-icon {
+                width: 20px;
+
+                &::before,
+                &::after {
+                    width: 20px;
+                }
+
+                &::before {
+                    top: -6px;
+                }
+
+                &::after {
+                    top: 6px;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            margin-top: 12px;
+            padding: 15px;
+        }
+
+        .nav-link {
+            padding: 10px 16px !important;
+            font-size: 14px;
+        }
+    }
+
+    // Tablet styles (768px+)
+    @media (min-width: 768px) {
+        &__grid {
+            gap: 100px;
+        }
+
+        &__col {
+            &--menu {
+                order: 1;
+                width: auto;
+                flex: 1;
+                text-align: left;
+            }
+
+            &--logo {
+                order: 2;
+                flex-grow: 1;
+            }
+
+            &--button {
+                order: 3;
+                flex-grow: 1;
+            }
+
+            &--toggler {
+                display: none;
+            }
+        }
+
+        &__logo {
+            font-size: 24px;
+        }
+
+        &__request {
+            font-size: 13px;
+            padding: 3px 14px;
+            min-width: 150px;
+        }
+
+        .navbar-collapse {
+            background: transparent;
+            box-shadow: none;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .nav-link {
+            padding: 8px 16px !important;
+            font-size: 14px;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    // Desktop styles (992px+)
+    @media (min-width: 992px) {
+        .container {
+            padding: 0 15px;
+        }
+
+        &__grid {
+            gap: 160px;
+        }
+
+        &__logo {
+            font-size: 26px;
+        }
+
+        &__request {
+            font-size: 14px;
+            padding: 3px 16px;
+            min-width: 140px;
+        }
+
+        &__col {
+            &--menu {
+                flex: 2;
+                max-width: 500px;
+            }
+
+            &--logo {
+                flex: 1;
+            }
+
+            &--button {
+                flex: 1;
+            }
+        }
+
+        .navbar-nav {
+            gap: 20px;
+        }
+
+        .nav-link {
+            padding: 10px 20px !important;
+            font-size: 15px;
+        }
+    }
+
+    // Large desktop styles (1280px+)
+    @media (min-width: 1280px) {
+        .container {
+            padding: 0 15px;
+        }
+
+        &__grid {
+            gap: 240px;
+        }
+    }
+}
+
+// Navigation collapse behavior
+.navbar-collapse {
+    @media (min-width: 768px) {
+        display: flex !important;
+    }
+}
+
+.collapse:not(.show) {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex !important;
+    }
+}
