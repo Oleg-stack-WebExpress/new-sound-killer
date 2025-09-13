@@ -1,327 +1,38 @@
-/*.footer {
-    background-color: #E7ECFF;
-    color: #939EA4;
-    padding: 30px 0 20px;
+.footer {
+    background-color: #fafafa;
+    color: #999;
+    padding: 30px 0 15px;
 
     .container {
         padding: 0 15px;
     }
 
-    &__row {
+    &__head {
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        align-items: center;
         justify-content: space-between;
-    }
 
-    &__first {
-        border-bottom: 1px solid #CDD1D4;
-        padding: 20px 0;
-        
-        .footer__row {
-            justify-content: center;
+        &__text{
+            h3{
+               font-family: "NexaText Thin", "NexaText-Trial-Thin", sans-serif;
+               color: #000;
+            }
         }
     }
 
-    &__second {
-        padding: 25px 0;
-        
-        .footer__row {
-            justify-content: center;
-        }
-    }
 
-    &__col {
-        flex: 0 0 auto;
-        text-align: center;
-        
-        &--copyright {
-            order: 2;
-        }
-        
-        &--button {
-            order: 1;
-        }
-        
-        &--menu {
-            order: 2;
-            width: 100%;
-        }
-        
-        &--logo {
-            order: 1;
-        }
-        
-        &--social {
-            order: 3;
-            width: 100%;
-        }
-    }
+
+
 
     &__copyright {
+        text-align: center;
         font-size: 14px;
-        color: #5D6970;
-    }
+        font-weight: 400;
 
-    &__btn {
-        background-color: #111B47;
-        border: 2px solid #111B47;
-        color: #fff;
-        border-radius: 2px;
-        padding: 8px 16px;
-        min-width: 120px;
-        white-space: nowrap;
-        text-decoration: none;
-        font-size: 13px;
-        transition: all 0.3s ease;
-
-        &:hover {
-            background-color: #0a112f;
-            border: 2px solid #111B47;
-            color: #fff;
+        a {
+            text-decoration: none;
+            color: #999;
         }
     }
 
-    &__menu-wrapper {
-        margin-bottom: 20px;
-    }
 
-    &__menu {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    &__menu a {
-        color: #6F7CB2;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-        padding: 6px 12px;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-        white-space: nowrap;
-
-        &:hover {
-            color: #091133;
-            background: rgba(55, 68, 126, 0.1);
-        }
-    }
-
-    &__logo {
-        color: #37447E;
-        font-size: 20px;
-        font-weight: 700;
-        text-decoration: none;
-        display: block;
-        margin: 15px 0;
-    }
-
-    &__social {
-        display: flex;
-        gap: 12px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    &__social a {
-        color: #6F7CB2;
-        text-decoration: none;
-        font-size: 16px;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background: #fff;
-        transition: all 0.3s ease;
-
-        &:hover {
-            color: #091133;
-            background: #f8f9fa;
-            transform: translateY(-2px);
-        }
-    }
-
-    // Samsung Galaxy S8+ (360px)
-    @media (min-width: 360px) and (max-width: 767px) {
-        .container {
-            padding: 0 12px;
-        }
-        
-        &__row {
-            gap: 15px;
-        }
-        
-        &__copyright {
-            font-size: 12px;
-        }
-        
-        &__btn {
-            font-size: 12px;
-            padding: 6px 12px;
-            min-width: 110px;
-        }
-        
-        &__menu {
-            gap: 8px;
-        }
-        
-        &__menu a {
-            font-size: 12px;
-            padding: 4px 8px;
-        }
-        
-        &__logo {
-            font-size: 16px;
-            margin: 12px 0;
-        }
-        
-        &__social {
-            gap: 8px;
-        }
-        
-        &__social a {
-            font-size: 14px;
-            width: 32px;
-            height: 32px;
-        }
-    }
-
-    // Tablet styles (768px+)
-    @media (min-width: 768px) {
-        &__first {
-            .footer__row {
-                justify-content: space-between;
-            }
-            
-            .footer__col {
-                &--copyright {
-                    order: 1;
-                    text-align: left;
-                }
-                
-                &--button {
-                    order: 2;
-                    text-align: right;
-                }
-            }
-        }
-        
-        &__second {
-            .footer__row {
-                justify-content: space-between;
-            }
-            
-            .footer__col {
-                &--menu {
-                    order: 1;
-                    width: auto;
-                    flex: 1;
-                    text-align: left;
-                }
-                
-                &--logo {
-                    order: 2;
-                    width: auto;
-                    flex: 0 0 auto;
-                }
-                
-                &--social {
-                    order: 3;
-                    width: auto;
-                    flex: 1;
-                    text-align: right;
-                }
-            }
-        }
-        
-        &__copyright {
-            font-size: 14px;
-        }
-        
-        &__btn {
-            font-size: 13px;
-            padding: 8px 16px;
-        }
-        
-        &__menu {
-            justify-content: flex-start;
-            gap: 15px;
-        }
-        
-        &__menu a {
-            font-size: 14px;
-            padding: 6px 12px;
-        }
-        
-        &__logo {
-            font-size: 22px;
-            margin: 0;
-        }
-        
-        &__social {
-            justify-content: flex-end;
-            gap: 12px;
-        }
-        
-        &__social a {
-            font-size: 16px;
-            width: 36px;
-            height: 36px;
-        }
-    }
-
-    // Desktop styles (992px+)
-    @media (min-width: 992px) {
-        &__first {
-            padding: 30px 0;
-        }
-        
-        &__copyright {
-            font-size: 15px;
-        }
-        
-        &__btn {
-            font-size: 14px;
-            padding: 9px 18px;
-            min-width: 140px;
-        }
-        
-        &__second {
-            padding: 30px 0;
-        }
-        
-        &__menu {
-            gap: 20px;
-        }
-        
-        &__menu a {
-            font-size: 15px;
-            padding: 8px 16px;
-        }
-        
-        &__logo {
-            font-size: 26px;
-        }
-        
-        &__social {
-            gap: 15px;
-        }
-        
-        &__social a {
-            font-size: 18px;
-            width: 40px;
-            height: 40px;
-        }
-    }
-}*/
+}

@@ -1,59 +1,51 @@
-/*body {
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-p {
-    color: #6F7CB2;
-    margin-bottom: 10px;
-}
-
 .btn {
-    border-radius: 2px;
-    padding: 2px;
-    min-width: 100px;
+    padding: 12px 40px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 14px;
+    border-width: 1px;
+    border-radius: 4px;
 }
 
 .btn-primary {
-    background-color: #111B47;
-    border: 2px solid #111B47;
+    background-color: #8c8cf9;
     color: #fff;
+    border-color: #8c8cf9;
+    margin-right: 2.8px;
 
     &:hover {
-        background-color: #0a112f;
-        border: 2px solid #111B47;
+        background-color: #8c8cf9;
+        color: #fff;
+        border-color: #8c8cf9;
     }
 }
 
 .btn-outline-primary {
-    border: 2px solid #111B47;
-    color: #111B47;
+    background-color: #fff;
+    color: #363636;
+    border-color: #dbdbdb;
 
     &:hover {
-        background: #111B47;
-        border: 2px solid #111B47;
-        color: #fff;
+        background-color: #fff;
+        color: #363636;
+        border-color: #b3b0b0;
     }
 }
 
-
 .title {
-    color: #091133;
-    font-size: 36px;
+    color: #444f60;
+    font-size: 45.5px;
     margin-bottom: 16px;
-
+    
     &--center {
         text-align: center;
     }
-}
 
-.padding-top-150 {
-    padding-top: 150px;
+    &--main {
+        font-size: 56px;
+    }
 }
-
-.padding-bottom-150 {
-    padding-bottom: 150px;
-}
-
-.padding-top-250 {
-    padding-top: 250px;
-}*/
