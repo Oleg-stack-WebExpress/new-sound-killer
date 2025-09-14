@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-Heavy.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-HeavyItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-Book.ttf') format('truetype');
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-BookItalic.ttf') format('truetype');
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Trial-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Demo версии (если нужно их использовать)
+@font-face {
+  font-family: 'Nexa Demo';
+  src: url('../fonts/NexaDemo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa Demo';
+  src: url('../fonts/NexaDemo-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Nexa Text версии (если нужно их использовать)
+@font-face {
+  font-family: 'Nexa Text';
+  src: url('../fonts/NexaText-Trial-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa Text';
+  src: url('../fonts/NexaText-Trial-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Миксины для удобного использования
+@mixin nexa($weight: 400, $style: normal) {
+  font-family: 'Nexa', sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin nexa-text($weight: 400, $style: normal) {
+  font-family: 'Nexa Text', sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin nexa-demo($weight: 400, $style: normal) {
+  font-family: 'Nexa Demo', sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// CSS переменные для весов шрифта
+:root {
+  --nexa-thin: 100;
+  --nexa-extra-light: 200;
+  --nexa-light: 300;
+  --nexa-regular: 400;
+  --nexa-book: 350;
+  --nexa-medium: 500;
+  --nexa-heavy: 600;
+  --nexa-bold: 700;
+  --nexa-extra-bold: 800;
+  --nexa-black: 900;
+}
