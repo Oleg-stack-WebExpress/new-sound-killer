@@ -3,6 +3,11 @@
     color: #999;
     padding: 30px 0 15px;
 
+    //толщина шрифта не регулируется
+    p {
+        font-weight: 50;
+    }
+
     .container {
         padding: 0 15px;
     }
@@ -10,23 +15,91 @@
     &__head {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #d5d2d2;
 
-        &__text{
-            h3{
-               font-family: "Nexa", sans-serif;
-               color: #000;
+        &__text {
+            h3 {
+                font-family: "Nexa", sans-serif;
+                color: #444f60;
+                font-size: 25.2px;
+                font-weight: bolder;
+            }
+        }
+
+        &__action {
+            .buttons {
+                .btn {
+                    padding: 8px 40px;
+                    margin-right: 0px;
+                }
+
+                .btn-outline-primary {
+                    color: #8c8cf9;
+                    border: none;
+                    padding: 8px 20px;
+                }
             }
         }
     }
 
+    &__body {
+        padding-top: 30px;
 
+        .columns-description {
+            width: 33.3%;
 
+            .small-footer-logo {
+                height: 24px;
+                max-width: 100%;
+            }
+
+            .footer-description {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .moto {
+                .icon-heart {
+                    color: red;
+                }
+            }
+
+            .social-links {
+                .icon {
+                    color: #999;
+                    margin-right: 5px;
+                }
+
+            }
+        }
+
+    }
+
+    &__column {
+        list-style: none;
+
+        .column-header {
+            color: #444f60;
+        }
+
+        .column-item {
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            a {
+                color: #999;
+            }
+        }
+    }
 
 
     &__copyright {
         text-align: center;
         font-size: 14px;
         font-weight: 400;
+        padding-top: 80px;
 
         a {
             text-decoration: none;
