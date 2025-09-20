@@ -58,3 +58,21 @@ body {
 a {
     text-decoration: none;
 }
+
+.logo {
+    max-width: 30px;
+    margin-right: 10px;
+    padding-bottom: 21px;
+
+
+    &__left {
+        color: #334258;
+        font-family: "Bebas Neue";
+             font-weight: 400;
+    }
+
+    &__rigth {
+        color: #8c8cf9;
+
+    }
+}

@@ -195,6 +195,15 @@
   font-style: $style;
 }
 
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('ofont.ru_Bebas Neue.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 // CSS переменные для весов шрифта
 :root {
   --nexa-thin: 100;
@@ -207,4 +216,13 @@
   --nexa-bold: 700;
   --nexa-extra-bold: 800;
   --nexa-black: 900;
+  --bebas-thin: 100;
+  --bebas-extra-light: 200;
+  --bebas-light: 300;
+  --bebas-regular: 400;
+  --bebas-medium: 500;
+  --bebas-semi-bold: 600;
+  --bebas-bold: 700;
+  --bebas-extra-bold: 800;
+  --bebas-black: 900;
 }

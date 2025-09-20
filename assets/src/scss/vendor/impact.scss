@@ -1,0 +1,184 @@
+// impact.scss
+// Шрифт Impact для мощного визуального воздействия
+
+// Импорт шрифта
+@font-face {
+  font-family: 'Impact';
+  src: url('impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Переменные
+$impact-font: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$primary-color: #000000;
+$accent-color: #ff0000;
+$background-color: #ffffff;
+
+// Миксины для текста с Impact
+@mixin impact-text($size: 1rem, $color: $primary-color, $spacing: 0.05em) {
+  font-family: $impact-font;
+  font-size: $size;
+  color: $color;
+  letter-spacing: $spacing;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+@mixin impact-outline($width: 2px, $color: $primary-color) {
+  text-shadow:
+    -#{$width} -#{$width} 0 $color,
+    $width -#{$width} 0 $color,
+    -#{$width} $width 0 $color,
+    $width $width 0 $color;
+}
+
+@mixin impact-gradient-text($color1: #ff0000, $color2: #990000) {
+  background: linear-gradient(45deg, $color1, $color2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Базовые стили
+.impact-heading {
+  @include impact-text(3rem, $primary-color, 0.1em);
+  margin: 0 0 1rem;
+  
+  &--large {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  
+  &--outline {
+    color: $background-color;
+    @include impact-outline(3px, $primary-color);
+  }
+  
+  &--gradient {
+    @include impact-gradient-text(#ff0000, #990000);
+  }
+}
+
+.impact-subheading {
+  @include impact-text(1.5rem, #333, 0.08em);
+  margin: 0 0 1.5rem;
+}
+
+.impact-label {
+  @include impact-text(0.9rem, $primary-color, 0.1em);
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: $accent-color;
+  color: white;
+}
+
+// Специальные эффекты
+.impact-text-effect {
+  @include impact-text(4rem, $primary-color, 0.1em);
+  position: relative;
+  display: inline-block;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+// Анимации
+@keyframes impact-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.impact-pulse {
+  animation: impact-pulse 2s infinite;
+}
+
+@keyframes impact-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.impact-shake {
+  display: inline-block;
+  animation: impact-shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+// Утилитарные классы
+.text-impact {
+  @include impact-text;
+}
+
+.text-impact-outline {
+  @include impact-text;
+  @include impact-outline;
+  color: $background-color;
+}
+
+.text-impact-gradient {
+  @include impact-text;
+  @include impact-gradient-text;
+}
+
+// Адаптивность
+@media (max-width: 768px) {
+  .impact-heading {
+    font-size: 2rem;
+    
+    &--large {
+      font-size: 3rem;
+    }
+  }
+  
+  .impact-subheading {
+    font-size: 1.2rem;
+  }
+  
+  .impact-text-effect {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .impact-heading {
+    font-size: 1.8rem;
+    
+    &--large {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .impact-text-effect {
+    font-size: 2rem;
+  }
+}
