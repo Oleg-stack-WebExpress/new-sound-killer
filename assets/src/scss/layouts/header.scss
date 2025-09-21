@@ -1,4 +1,24 @@
-
+.header {
+    .container{
+        .collapse{
+            padding-bottom: 10px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #444f60;
+        margin-right: 10px;
+        i {
+           font-size: 24px;
+        }
+    }
+    .avatar{
+        
+            width: 50px;
+            border-radius: 25px;
+        
+    }
+}
 
 
 

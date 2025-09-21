@@ -68,11 +68,12 @@ a {
     &__left {
         color: #334258;
         font-family: "Bebas Neue";
-             font-weight: 400;
+        font-weight: bolder;
+        font-size: 39px;
     }
 
     &__rigth {
         color: #8c8cf9;
-
+        margin-right: 10px;
     }
 }
