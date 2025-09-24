@@ -14,9 +14,9 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <div class="header__first">
-                    <img class="logo" src="<?= assets('images/bulkit-core.png'); ?>" alt="logo"></img><span
-                        class="logo__left">BUL<span class="logo__rigth">KIT</span></span>
+                <div class="header__logo">
+                    <a href="/"><img class="logo__img" src="<?= assets('images/bulkit-core.png'); ?>"
+                            alt="logo"></img><span class="logo__left">BUL<span class="logo__rigth">KIT</span></span></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <?php
@@ -36,10 +36,26 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="#"><i class="icon-heart-empty"></i></a>
-                <a href="#"><i class="icon-basket-alt"></i></a>
-                <img class="avatar" src="<?= assets('images/helen.jpg'); ?>" alt="avatar">
+                <div class="header__actions" style="display: flex; align-items: center; gap: 15px;">
+                    <a href="#"><i class="icon-heart-empty"></i></a>
+                    <a href="#"><i class="icon-basket-alt"></i></a>
+                    <div class="dropdown text-end">
+                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="avatar" src="<?= assets('images/helen.jpg'); ?>" alt="avatar">
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
-    <main class="main-content">
+    <main class="main-content padding-top-100">

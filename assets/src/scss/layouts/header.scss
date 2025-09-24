@@ -1,22 +1,71 @@
+$header-transition: all 0.3s ease;
+$header-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$header-bg-scrolled: #fff;
+
 .header {
-    .container{
-        .collapse{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+    transition: $header-transition;
+    top: 0;
+    left: 0;
+
+    &.scrolled {
+        background: $header-bg-scrolled;
+        box-shadow: $header-shadow;
+    }
+
+    .container {
+        .collapse {
             padding-bottom: 10px;
         }
     }
-    a {
-        text-decoration: none;
-        color: #444f60;
-        margin-right: 10px;
-        i {
-           font-size: 24px;
+
+    &__actions {
+        a {
+            text-decoration: none;
+            color: #444f60;
+            margin-right: 10px;
+
+            i {
+                font-size: 24px;
+            }
         }
-    }
-    .avatar{
-        
+
+        .avatar {
+
             width: 43px;
             border-radius: 25px;
-        
+
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        // Скрытие на мобильных
+        @media (max-width: 993px) {
+            display: none !important;
+        }
+
+        // Позиционирование dropdown
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute !important;
+            top: 100% !important;
+            right: -30px !important; // Сдвиг влево
+            left: auto !important;
+            margin-top: 5px !important;
+            transform: none !important;
+            inset: unset !important;
+            z-index: 1000;
+        }
     }
 }
 
@@ -58,23 +107,9 @@
 
 
 
-/*$header-transition: all 0.3s ease;
-$header-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-$header-bg-scrolled: #fff;
-
+/*
 .header {
-    position: fixed;
-    width: 100%;
-    background: transparent;
-    z-index: 1000;
-    transition: $header-transition;
-    top: 0;
-    left: 0;
-
-    &.scrolled {
-        background: $header-bg-scrolled;
-        box-shadow: $header-shadow;
-    }
+    
 
 
     .container {

@@ -8,15 +8,14 @@
                 <p>Create your free account now</p>
             </div>
             <div class="footer__head__action">
-                <div class="buttons">
-                    <a class="btn btn-primary">Try it free</a>
-                    <a class="btn btn-outline-primary">Chat with us</a>
-                </div>
+                <a class="btn btn-primary">Try it free</a>
+                <a class="btn btn-outline-primary">Chat with us</a>
             </div>
         </div>
         <div class="columns footer__body">
             <div class="row">
-                <div class="col-6 columns-description">
+                <!-- Основное описание - занимает всю ширину на мобильных, половину на планшетах, 6 колонок на десктопе -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 columns-description">
                     <img class="small-footer-logo" src="<?= assets('images/bulkit-logo-g.png'); ?>" alt="logo">
                     <div class="footer-description">
                         <p>Bulkit is built for developers and designers. It's modular approach
@@ -55,7 +54,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-2 pages-main margin-left-195">
+
+                <!-- Пустая колонка-разделитель - скрывается на мобильных и планшетах -->
+                <div class="d-none d-lg-block col-lg-2 col-xl-2"></div>
+
+                <!-- Колонки меню - на мобильных: 2 в ряд, на планшетах: 3 в ряд, на десктопе: по 2 колонки -->
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 pages-main">
                     <ul class="footer__column">
                         <li class="column-header">BULKIT</li>
                         <li class="column-item">
@@ -72,7 +76,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-2 pages-additionally">
+
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 pages-additionally">
                     <ul class="footer__column">
                         <li class="column-header">RESSOURCES</li>
                         <li class="column-item">
@@ -89,7 +94,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-2 pages-terms">
+
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 pages-terms">
                     <ul class="footer__column">
                         <li class="column-header">TERMS</li>
                         <li class="column-item">

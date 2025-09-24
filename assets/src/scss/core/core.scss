@@ -9,7 +9,7 @@ body {
     font-size: 14px;
     border-width: 1px;
     border-radius: 4px;
-}
+   }
 
 .btn-primary {
     background-color: #8c8cf9;
@@ -41,39 +41,37 @@ body {
     font-size: 45.5px;
     margin-bottom: 16px;
 
-    &--center {
+    &__center {
         text-align: center;
     }
 
-    &--main {
+    &__main {
         font-size: 56px;
     }
 }
-
-.margin-left-195 {
-    margin-left: 195.5px;
-}
-
 
 a {
     text-decoration: none;
 }
 
-.logo {
+.logo__img {
     max-width: 30px;
     margin-right: 10px;
     padding-bottom: 21px;
+}
 
+.logo__left {
+    color: #334258;
+    font-family: "Bebas Neue";
+    font-weight: bolder;
+    font-size: 39px;
+}
 
-    &__left {
-        color: #334258;
-        font-family: "Bebas Neue";
-        font-weight: bolder;
-        font-size: 39px;
-    }
+.logo__rigth {
+    color: #8c8cf9;
+    margin-right: 10px;
+}
 
-    &__rigth {
-        color: #8c8cf9;
-        margin-right: 10px;
-    }
+.padding-top-100 {
+    padding-top: 100px;
 }

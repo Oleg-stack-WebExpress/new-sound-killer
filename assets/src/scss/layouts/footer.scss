@@ -13,6 +13,21 @@
         padding-bottom: 30px;
         border-bottom: 1px solid #d5d2d2;
 
+        // На iPhone 8 (375px)
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        // На планшетах (≥768px)
+        @media (min-width: 768px) and (max-width: 991px) {
+            flex-direction: column;
+        }
+
+        // На десктопе (≥992px)
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+
         &__text {
             h3 {
                 font-family: "Nexa", sans-serif;
@@ -23,17 +38,38 @@
         }
 
         &__action {
-            .buttons {
-                .btn {
-                    padding: 8px 40px;
-                    margin-right: 0px;
-                }
 
-                .btn-outline-primary {
-                    color: #8c8cf9;
-                    border: none;
-                    padding: 8px 20px;
-                }
+            // На iPhone 8 (375px)
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+            }
+
+            // На планшетах (≥768px)
+            @media (min-width: 768px) and (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+            }
+
+            // На десктопе (≥992px)
+            @media (min-width: 992px) {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .btn {
+                padding: 8px 40px;
+                margin-right: 0px;
+                max-height: 39.5px;
+            }
+
+            .btn-outline-primary {
+                color: #8c8cf9;
+                border: none;
+                padding: 8px 20px;
+                max-height: 39.5px;
             }
         }
     }
@@ -43,6 +79,7 @@
 
         .columns-description {
             width: 33.3%;
+            margin-bottom: 20px;
 
             .small-footer-logo {
                 height: 24px;
@@ -68,7 +105,6 @@
 
             }
         }
-
     }
 
     &__column {
@@ -77,7 +113,7 @@
         .column-header {
             color: #444f60;
             font-family: "Nexa", sans-serif;
-             font-weight: 400;
+            font-weight: 400;
         }
 
         .column-item {
