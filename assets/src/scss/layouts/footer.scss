@@ -79,7 +79,22 @@
 
         .columns-description {
             width: 33.3%;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+
+            // На iPhone 8 (375px)
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            // На планшетах (≥768px)
+            @media (min-width: 768px) and (max-width: 991px) {
+                width: 100%;
+            }
+
+            // На десктопе (≥992px)
+            @media (min-width: 992px) {
+                width: 33.3%;
+            }
 
             .small-footer-logo {
                 height: 24px;
@@ -102,13 +117,15 @@
                     color: #999;
                     margin-right: 5px;
                 }
-
             }
         }
     }
 
     &__column {
         list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 40px;
 
         .column-header {
             color: #444f60;

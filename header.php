@@ -18,6 +18,10 @@
                     <a href="/"><img class="logo__img" src="<?= assets('images/bulkit-core.png'); ?>"
                             alt="logo"></img><span class="logo__left">BUL<span class="logo__rigth">KIT</span></span></a>
                 </div>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <?php
                     wp_nav_menu([
@@ -31,10 +35,6 @@
                     ]);
                     ?>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="header__actions" style="display: flex; align-items: center; gap: 15px;">
                     <a href="#"><i class="icon-heart-empty"></i></a>
