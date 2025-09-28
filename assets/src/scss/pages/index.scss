@@ -1,8 +1,4 @@
 .meet {
-    p {
-        color: #999;
-    }
-
     img {
         max-height: 500px;
         width: auto;
@@ -17,6 +13,7 @@
     }
 
     &__action {
+
         /* 992px и меньше */
         @media (max-width: 992px) {
             display: flex;
@@ -24,17 +21,41 @@
         }
 
     }
+}
 
+.logos {
+    &__action {
+        display: flex;
+        justify-content: center; // горизонтальное центрирование
+        align-items: center; // вертикальное центрирование
+        flex-wrap: wrap; // перенос на новые строки
+        gap: 20px; // отступы между элементами
 
-    .page-column {
-        width: 33.3%;
-        margin-top: 70px;
+        img {
+            height: 70px;
+            max-width: 100%;
+            object-fit: contain; // сохраняет пропорции изображений
+        }
+    }
+}
+
+.name {
+    .row {
+        margin-left: 70px;
+
+        @media (max-width: 1192px) {
+            margin-left: 0; // обнуляем отступ
+        }
     }
 
-    /* 1192px и меньше */
-    @media (max-width: 1192px) {
-        .page-column {
-            width: 100%;
+    .btn {
+        padding: 8px 12px;
+        border: none;
+        color: #8c8cf9;
+        background-color: #fff;
+
+        &:hover {
+            background-color: #e9e8e8;
         }
     }
 }

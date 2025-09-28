@@ -53,6 +53,12 @@
       "css": "basket-alt",
       "code": 59395,
       "src": "modernpics"
+    },
+    {
+      "uid": "37f6cfbb4062ed0d01b351ec35c334ff",
+      "css": "right-open-mini",
+      "code": 59396,
+      "src": "entypo"
     }
   ]
 }
