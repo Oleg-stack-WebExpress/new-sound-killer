@@ -2,6 +2,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 , h2 {
+    font-family: "Nexa", sans-serif;
+    font-weight: bold;
+}
+
 .btn {
     padding: 12px 40px;
     text-decoration: none;
@@ -40,6 +45,19 @@ body {
         border-color: #b3b0b0;
     }
 }
+
+
+.btn-outline-open {
+        padding: 8px 12px;
+        border: none;
+        color: #8c8cf9;
+        background-color: #fff;
+
+        &:hover {
+            background-color: #e9e8e8;
+        }
+    }
+
 
 .title {
     color: #444f60;

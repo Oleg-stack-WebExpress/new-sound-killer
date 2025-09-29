@@ -47,15 +47,45 @@
             margin-left: 0; // обнуляем отступ
         }
     }
+}
 
-    .btn {
-        padding: 8px 12px;
-        border: none;
-        color: #8c8cf9;
-        background-color: #fff;
+.incredible {
+    img {
+        max-height: 500px;
+        width: auto;
+        margin: 0 auto;
 
-        &:hover {
-            background-color: #e9e8e8;
+        // На iPhone 8 (375px)
+        @media (max-width: 767px) {
+            max-height: 285px;
+            width: auto;
+            margin: 0 auto;
         }
     }
+
+}
+
+.robust {
+
+    .row {
+        margin-left: 70px;
+
+        @media (max-width: 1192px) {
+            margin-left: 0; // обнуляем отступ
+        }
+    }
+
+    img {
+        max-height: 500px;
+        width: auto;
+        margin: 0 auto;
+
+        // На iPhone 8 (375px)
+        @media (max-width: 767px) {
+            max-height: 285px;
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+
 }
