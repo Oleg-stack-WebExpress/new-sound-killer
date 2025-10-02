@@ -41,7 +41,7 @@
 
 .name {
     .row {
-        margin-left: 70px;
+        margin-left: 200px;
 
         @media (max-width: 1192px) {
             margin-left: 0; // обнуляем отступ
@@ -50,6 +50,14 @@
 }
 
 .incredible {
+    .row {
+        margin-left: 120px;
+
+        @media (max-width: 1192px) {
+            margin-left: 0; // обнуляем отступ
+        }
+    }
+
     img {
         max-height: 500px;
         width: auto;
@@ -68,7 +76,7 @@
 .robust {
 
     .row {
-        margin-left: 70px;
+        margin-left: 200px;
 
         @media (max-width: 1192px) {
             margin-left: 0; // обнуляем отступ
@@ -88,4 +96,32 @@
         }
     }
 
+}
+
+.multiline {
+    &__products {
+        display: flex;
+        justify-content: center; // горизонтальное центрирование
+        align-items: center; // вертикальное центрирование
+        flex-wrap: wrap; // перенос на новые строки
+        gap: 35px; // отступы между элементами
+
+        &__product {
+            max-width: 235px;
+            text-align: center;
+
+            &__product-icon {
+                color: #8c8cf9;
+
+                i {
+                    font-size: 50px;
+                }
+
+                p {
+                    color: #8c8cf9;
+                }
+            }
+        }
+
+    }
 }

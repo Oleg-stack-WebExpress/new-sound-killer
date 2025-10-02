@@ -4,7 +4,15 @@
 .icon-heart-empty:before { content: '\e802'; } /* '' */
 .icon-basket-alt:before { content: '\e803'; } /* '' */
 .icon-right-open-mini:before { content: '\e804'; } /* '' */
+.icon-headphones:before { content: '\e805'; } /* '' */
+.icon-tape:before { content: '\e806'; } /* '' */
+.icon-headphones-1:before { content: '\e807'; } /* '' */
+.icon-play-circled2:before { content: '\e808'; } /* '' */
+.icon-magnet:before { content: '\e809'; } /* '' */
+.icon-mic-outline:before { content: '\e80a'; } /* '' */
+.icon-equalizer:before { content: '\e80b'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-dribbble:before { content: '\f17d'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
+.icon-soundcloud:before { content: '\f348'; } /* '' */

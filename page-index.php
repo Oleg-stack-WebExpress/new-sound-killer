@@ -100,9 +100,9 @@ get_header();
 <section class="multiline padding-top-100">
     <div class="container">
         <div class="multiline__products">
-            <div class="multiline__product">
-                <div class="multiline__product-icon">
-                    <i class="icon-right-open-mini"></i>
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-headphones"></i>
                     <p>Robust Materials</p>
                 </div>
                 <p>
@@ -110,7 +110,76 @@ get_header();
                     vel hinc solet.
                 </p>
             </div>
-
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-tape"></i>
+                    <p>Vintage Sound</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut
+                    vel hinc solet.
+                </p>
+            </div>
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-headphones-1"></i>
+                    <p>Bud Switch</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut
+                    vel hinc solet.
+                </p>
+            </div>
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-play-circled2"></i>
+                    <p>Wireless Controls</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut
+                    vel hinc solet.
+                </p>
+            </div>
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-magnet"></i>
+                    <p>Sharp Magnet</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut
+                    vel hinc solet.
+                </p>
+            </div>
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-soundcloud"></i>
+                    <p>Audio Compression</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut
+                    vel hinc solet.
+                </p>
+            </div>
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-mic-outline"></i>
+                    <p>Ghost Mic</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut
+                    vel hinc solet.
+                </p>
+            </div>
+            <div class="multiline__products__product">
+                <div class="multiline__products__product__product-icon">
+                    <i class="icon-equalizer"></i>
+                    <p>Audio Presets</p>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut
+                    vel hinc solet.
+                </p>
+            </div>
         </div>
     </div>
 </section>
