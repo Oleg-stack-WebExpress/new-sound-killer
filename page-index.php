@@ -188,13 +188,21 @@ get_header();
     <div class="container">6</div>
 </section>
 
-<section class="name padding-top-100">
-    <div class="container">7</div>
-</section>
-
-<section class="name padding-top-100">
+<section class="people padding-bottom-100">
     <div class="container">
         <h2 class="title title__center">People don't Listen.</h2>
+        <p>
+
+            Beats' first on-ear headphones with active noise cancellation. The
+            Solo Pros analyze ambient noise with their built-in microphones and
+            cancel out the clamor of city streets and the low rumble of a subway
+            or plane.
+
+        </p>
+        <div class="people__action">
+            <a class="btn btn-primary">Buy Now</a>
+            <a class="btn btn-outline-primary">Features</a>
+        </div>
     </div>
 </section>
 

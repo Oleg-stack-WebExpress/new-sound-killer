@@ -125,3 +125,57 @@
 
     }
 }
+
+.people {
+    text-align: center;
+    background-image: url('../images/product-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative; // важно для псевдоэлемента
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); // черный с прозрачностью 50%
+        z-index: 1;
+    }
+
+    h2,
+    p {
+        position: relative;
+        z-index: 2;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+        max-width: 700px;
+        text-align: center !important;
+        margin-left: auto !important;
+        /* центрирование по горизонтали */
+        margin-right: auto !important;
+        /* центрирование по горизонтали */
+    }
+
+    &__action {
+        position: relative;
+        z-index: 2;
+
+        /* 992px и меньше */
+        @media (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+}
