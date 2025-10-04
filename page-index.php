@@ -184,8 +184,17 @@ get_header();
     </div>
 </section>
 
-<section class="name padding-top-100">
-    <div class="container">6</div>
+<section class="gallery-wrapper">
+    <div class="gallery">
+        <a href="#">
+            <img src="<?= assets('images/gallery-1.jpg'); ?>" alt="man">
+        </a>
+        <a href="#"><img src="<?= assets('images/gallery-2.jpg'); ?>" alt="wooman pink"></a>
+        <a href="#"><img src="<?= assets('images/gallery-3.jpg'); ?>" alt="wooman orange"></a>
+        <a href="#"><img src="<?= assets('images/gallery-4.jpg'); ?>" alt="two mans"></a>
+        <a href="#"><img src="<?= assets('images/gallery-5.jpg'); ?>" alt="wooman street right"></a>
+        <a href="#"><img src="<?= assets('images/gallery-6.jpg'); ?>" alt="wooman street left"></a>
+    </div>
 </section>
 
 <section class="people padding-bottom-100">
